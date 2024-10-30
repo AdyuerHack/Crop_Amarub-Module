@@ -1,0 +1,19 @@
+<odoo>
+
+    <record id="action_crop_amarub" model="ir.actions.act_window">
+
+        <field name="name">Crop Amarub Records</field>
+
+        <field name="res_model">crop.amarub</field>
+
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+
+    <menuitem id="menu_crop_amarub_root" name="Crop Amarub" sequence="1"/>
+
+    <menuitem id="menu_crop_amarub" name="Crop Amarub Records" parent="menu_crop_amarub_root" action="action_crop_amarub"/>
+
+</odoo>
+

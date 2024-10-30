@@ -1,0 +1,72 @@
+<odoo>
+
+    <record id="view_form_crop_amarub" model="ir.ui.view">
+
+        <field name="name">crop.amarub.form.view</field>
+
+        <field name="model">crop.amarub</field>
+
+        <field name="arch" type="xml">
+
+            <form>
+
+                <sheet>
+
+                    <notebook>
+
+                        <page string="General Information">
+
+                            <group>
+
+                                <field name="contact_type" string="Contact Type"/>
+
+                                <field name="crop_category_and_type" string="Crop Category &amp; Type"/>
+
+                            </group>
+
+                        </page>
+
+                        <page string="Location Details">
+
+                            <group>
+
+                                <field name="crop_block_location" string="Block Location"/>
+
+                                <field name="crop_row_location" string="Row Location"/>
+
+                            </group>
+
+                        </page>
+
+                        <page string="Collection &amp; Irrigation">
+
+                            <group>
+
+                                <field name="crop_collection_method" string="Collection Method"/>
+
+                                <field name="water_type" string="Water Type"/>
+
+                                <field name="irrigation_type_usage" string="Irrigation Type &amp; Usage"/>
+
+                            </group>
+
+                        </page>
+
+                    </notebook>
+
+                    <footer>
+
+                        <button name="button_create_crop_amarub" type="object" string="Create Crop Record" class="btn-primary"/>
+
+                    </footer>
+
+                </sheet>
+
+            </form>
+
+        </field>
+
+    </record>
+
+</odoo>
+
